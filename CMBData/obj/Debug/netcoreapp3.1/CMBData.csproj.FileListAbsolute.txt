@@ -1,0 +1,10 @@
+C:\Users\gabre\source\repos\CMBData\bin\Debug\netcoreapp3.1\CMBData.deps.json
+C:\Users\gabre\source\repos\CMBData\bin\Debug\netcoreapp3.1\CMBData.dll
+C:\Users\gabre\source\repos\CMBData\obj\Debug\netcoreapp3.1\CMBData.csprojAssemblyReference.cache
+C:\Users\gabre\source\repos\CMBData\obj\Debug\netcoreapp3.1\CMBData.AssemblyInfoInputs.cache
+C:\Users\gabre\source\repos\CMBData\obj\Debug\netcoreapp3.1\CMBData.AssemblyInfo.cs
+C:\Users\gabre\source\repos\CMBData\bin\Debug\netcoreapp3.1\CMBData.runtimeconfig.json
+C:\Users\gabre\source\repos\CMBData\bin\Debug\netcoreapp3.1\CMBData.runtimeconfig.dev.json
+C:\Users\gabre\source\repos\CMBData\bin\Debug\netcoreapp3.1\CMBData.pdb
+C:\Users\gabre\source\repos\CMBData\obj\Debug\netcoreapp3.1\CMBData.dll
+C:\Users\gabre\source\repos\CMBData\obj\Debug\netcoreapp3.1\CMBData.pdb
