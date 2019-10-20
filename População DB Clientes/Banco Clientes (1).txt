@@ -1,0 +1,11 @@
+INSERT INTO Clientes (Nome,Cpf,Cidade,Email,Estado,Telefone) VALUES 
+('Macaulay',16130958299,'Governador Valadares','adipiscing.elit@magnaSedeu.edu','MG','(534) 800-7288'),
+('Kadeem',16260274999,'Carapicuíba','ullamcorper.Duis.cursus@nectellus.ca','São Paulo','(964) 863-6579'),
+('Carter',16630811099,'Vitória da Conquista','libero@adipiscing.co.uk','Bahia','(268) 246-5671'),
+('Gage',16590244899,'Niterói','vitae@nibh.co.uk','Rio de Janeiro','(368) 953-6649'),
+('Kuame',16111690999,'Santa Rita','ad.litora@nonfeugiatnec.net','PB','(442) 700-9323'),
+('Acton',16680766699,'Itajaí','parturient.montes@dui.co.uk','Santa Catarina','(463) 485-8052'),
+('Jerome',16120733899,'Rio de Janeiro','ipsum.dolor@ultrices.edu','Rio de Janeiro','(670) 788-4601'),
+('Solomon',16452687099,'Açailândia','enim.Mauris.quis@Sed.co.uk','MA','(607) 205-7072'),
+('Nero',16731780799,'Santarém','Duis.gravida.Praesent@vitae.co.uk','PA','(889) 562-7883'),
+('Hamish',16013002999,'Valparaíso de Goiás','Vestibulum.accumsan.neque@montesnascetur.ca','GO','(655) 900-0460');
