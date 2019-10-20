@@ -1252,6 +1252,19 @@
         "runtime": {
           "bin/placeholder/CMBData.dll": {}
         }
+      },
+      "CMBServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CMBData": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CMBServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CMBServices.dll": {}
+        }
       }
     }
   },
@@ -4838,11 +4851,17 @@
       "type": "project",
       "path": "../CMBData/CMBData.csproj",
       "msbuildProject": "../CMBData/CMBData.csproj"
+    },
+    "CMBServices/1.0.0": {
+      "type": "project",
+      "path": "../CMBServices/CMBServices.csproj",
+      "msbuildProject": "../CMBServices/CMBServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "CMBData >= 1.0.0",
+      "CMBServices >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0"
@@ -4880,6 +4899,9 @@
           "projectReferences": {
             "C:\\Users\\gabre\\source\\repos\\CMBData\\CMBData.csproj": {
               "projectPath": "C:\\Users\\gabre\\source\\repos\\CMBData\\CMBData.csproj"
+            },
+            "C:\\Users\\gabre\\source\\repos\\CMBServices\\CMBServices.csproj": {
+              "projectPath": "C:\\Users\\gabre\\source\\repos\\CMBServices\\CMBServices.csproj"
             }
           }
         }

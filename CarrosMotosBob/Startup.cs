@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CMBData;
+using CMBServices;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarrosMotosBob
@@ -27,6 +28,8 @@ namespace CarrosMotosBob
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSingleton(Configuration);
+            services.AddScoped<ICliente, ClienteServices>();
             services.AddDbContext<CMBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("CMBConnection")));
         }

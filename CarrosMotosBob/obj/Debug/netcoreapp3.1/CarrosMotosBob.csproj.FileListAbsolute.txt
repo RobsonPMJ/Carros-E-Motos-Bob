@@ -53,3 +53,6 @@ C:\Users\gabre\source\repos\CarrosMotosBob\obj\Debug\netcoreapp3.1\CarrosMotosBo
 C:\Users\gabre\source\repos\CarrosMotosBob\obj\Debug\netcoreapp3.1\CarrosMotosBob.Views.pdb
 C:\Users\gabre\source\repos\CarrosMotosBob\obj\Debug\netcoreapp3.1\CarrosMotosBob.dll
 C:\Users\gabre\source\repos\CarrosMotosBob\obj\Debug\netcoreapp3.1\CarrosMotosBob.pdb
+C:\Users\gabre\source\repos\CarrosMotosBob\bin\Debug\netcoreapp3.1\CMBServices.dll
+C:\Users\gabre\source\repos\CarrosMotosBob\bin\Debug\netcoreapp3.1\CMBServices.pdb
+C:\Users\gabre\source\repos\CarrosMotosBob\obj\Debug\netcoreapp3.1\Razor\Views\BaseClientes\Index.cshtml.g.cs

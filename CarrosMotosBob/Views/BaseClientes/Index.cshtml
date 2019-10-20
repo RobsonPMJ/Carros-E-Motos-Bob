@@ -1,0 +1,30 @@
+﻿@model CarrosMotosBob.Models.BaseClientes.ClienteIndexModel
+
+<div id="clientes">
+    <h3>Lista de Usuarios/Clientes</h3>
+    <div id="clientesTable">
+        <table class="table table-condensed" id="baseClientesIndextable">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>CPF</th>
+                <th>E-Mail</th>
+                <th>Telefone</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach (var cliente in @Model.Clientes)
+                {
+                    <tr class="clienteRow">
+                        <td class="">@cliente.Nome</td>
+                        <td class="">@cliente.Endereco</td>
+                        <td class="">@cliente.CPF</td>
+                        <td class="">@cliente.EMail</td>
+                        <td class="">@cliente.Telefone</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
