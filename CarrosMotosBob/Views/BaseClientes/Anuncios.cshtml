@@ -1,0 +1,56 @@
+﻿@model CarrosMotosBob.Models.BaseClientes.AnuncioIndexModel
+@{
+    ViewBag.Nome = @Model.Anuncios.First().NomeCliente;
+}
+
+<div id="anuncios">
+    <h3>Lista anuncios do @ViewBag.Nome </h3>
+    <div id="clientesTable">
+        <table class="table table-condensed" id="anunciosPorClienteIndexTable">
+            <thead>
+            <tr>
+                <th>Ano Do Veiculo</th>
+                <th>Modelo</th>
+                <th>Descricao</th>
+                <th>Status</th>
+                <th> </th>
+                <th> </th>
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var anuncio in @Model.Anuncios)
+            {
+                <tr class="clienteRow">
+                    <td class="">@anuncio.Ano</td>
+                    <td class="">@anuncio.Modelo</td>
+                    <td class="">@anuncio.Descricao</td>
+
+                    @switch (@anuncio.Status)
+                    {
+                        case 1:
+                            <td>Publicado</td>
+                            break;
+                        case 2:
+                            <td>Em análise</td>
+                            break;
+                        case 3:
+                            <td>Expirados</td>
+                            break;
+                        default:
+                            <td>Fora De Status</td>
+                            break;
+                    }
+                    <td class="">
+                        <button type="button" class="btn btn-success">Alterar</button>
+                    </td>
+                    <td class="">
+                        <button type="button" class="btn btn-danger">Exluir</button>
+                    </td>
+
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

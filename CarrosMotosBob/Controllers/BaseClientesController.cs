@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using CarrosMotosBob.Models.BaseClientes;
@@ -23,10 +24,10 @@ namespace CarrosMotosBob.Controllers
 
             var listingResults = clienteModels.Select(result => new ClientesIndexListingModel
             {
-                Id = result.ClienteId,
+                Id = result.Id,
                 Nome = result.Nome,
-                Endereco = _clientes.GetEndereco(result.ClienteId),
-                CPF = _clientes.GetCPF(result.ClienteId) ,
+                Endereco = _clientes.GetEndereco(result.Id),
+                CPF = _clientes.GetCPF(result.Id) ,
                 EMail = result.Email,
                 Telefone = result.Telefone
             });
@@ -35,6 +36,27 @@ namespace CarrosMotosBob.Controllers
                 Clientes = listingResults
             };
 
+            return View(model);
+        }
+
+        public IActionResult Anuncios(int id)
+        {
+            var anuncioModels = _clientes.GetAnuncios(id);
+
+            var listingResults = anuncioModels.Select(result => new AnuncioIndexListingModel
+            {
+                NomeCliente = _clientes.GetNome(id),
+                CpfCliente = _clientes.GetCPF(id),
+                Ano = result.Ano,
+                Modelo = result.Modelo.Nome,
+                Descricao = result.Descricao,
+                Status = result.Status
+
+            });
+            var model = new AnuncioIndexModel()
+            {
+                Anuncios = listingResults
+            };
             return View(model);
         }
     }
